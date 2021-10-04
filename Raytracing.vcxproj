@@ -91,6 +91,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -106,6 +107,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -151,17 +153,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Cartesian3.cpp" />
-    <ClCompile Include="light.cpp" />
-    <ClCompile Include="Raytracing.cpp" />
-    <ClCompile Include="triangle.cpp" />
-    <ClCompile Include="vector3.cpp" />
+    <ClCompile Include="Src/Cartesian3.cpp" />
+    <ClCompile Include="Src/light.cpp" />
+    <ClCompile Include="Src/Raytracing.cpp" />
+    <ClCompile Include="Src/triangle.cpp" />
+    <ClCompile Include="Src/vector3.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Cartesian3.h" />
-    <ClInclude Include="light.h" />
-    <ClInclude Include="triangle.h" />
-    <ClInclude Include="vector3.h" />
+    <ClInclude Include="Include/Cartesian3.h" />
+    <ClInclude Include="Include/light.h" />
+    <ClInclude Include="Include/triangle.h" />
+    <ClInclude Include="Include/vector3.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

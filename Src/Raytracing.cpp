@@ -28,7 +28,7 @@ void RenderBlackTriangle()
 	int height = 128;
 
 	// Generate output file
-	std::ofstream oFile("BlackTriangle.ppm");
+	std::ofstream oFile("Outputs/BlackTriangle.ppm");
 	oFile << "P3" << std::endl;
 	oFile << "# Creator " << std::endl;
 	oFile << width << " " << height << std::endl;
@@ -79,7 +79,7 @@ void RenderRainbowTriangle()
 	int height = 128;
 
 	// Generate output file
-	std::ofstream oFile("RainbowTriangle.ppm");
+	std::ofstream oFile("Outputs/RainbowTriangle.ppm");
 	oFile << "P3" << std::endl;
 	oFile << "# Creator " << std::endl;
 	oFile << width << " " << height << std::endl;
@@ -327,7 +327,7 @@ void Shadow()
 	int height = 128;
 
 	// Generate output file
-	std::ofstream oFile("Shadow.ppm");
+	std::ofstream oFile("Outputs/Shadow.ppm");
 	oFile << "P3" << std::endl;
 	oFile << "# Creator " << std::endl;
 	oFile << width << " " << height << std::endl;
@@ -630,16 +630,16 @@ int main()
 		RenderRainbowTriangle();
 		break;
 	case 3:
-		BlinnPhong(0, 0, "AmbientLight.ppm");
+		BlinnPhong(0, 0, "Outputs/AmbientLight.ppm");
 		break;
 	case 4:
-		BlinnPhong(0, 0.5, "DiffuseLight.ppm");
+		BlinnPhong(0, 0.5, "Outputs/DiffuseLight.ppm");
 		break;
 	case 5:
-		BlinnPhong(0.5, 0, "SpecularLight.ppm");
+		BlinnPhong(0.5, 0, "Outputs/SpecularLight.ppm");
 		break;
 	case 6:
-		BlinnPhong(1.0, 0.5, "AmbientAndSpecularLight.ppm");
+		BlinnPhong(1.0, 0.5, "Outputs/AmbientAndSpecularLight.ppm");
 		break;
 	case 7:
 		Shadow();
